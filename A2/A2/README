@@ -1,0 +1,28 @@
+README
+
+How to run:
+use the vrouter.sh and nfe.sh scripts provided to run the python scripts
+
+./nfe.sh <IP> <port> <topo_filepath>
+./vrouter.sh <nfe-ip> <nfe-port> <virtual-router-id>
+
+
+for example:
+	./nfe.sh localhost 2000 grading_topo.json
+	./vrouter.sh localhost 2000 1
+	./vrouter.sh localhost 2000 2
+	./vrouter.sh localhost 2000 3
+	./vrouter.sh localhost 2000 4
+	./vrouter.sh localhost 2000 5
+	./vrouter.sh localhost 2000 6
+	./vrouter.sh localhost 2000 7
+	
+
+will output to both standard output and 2 files: "topology_{id}.out" "routingtable_{id}.out"
+
+
+Undergrad machines used:
+ssh j77shi@ubuntu1804-002.student.cs.uwaterloo.ca
+
+Python Version: 3.8.3
+
